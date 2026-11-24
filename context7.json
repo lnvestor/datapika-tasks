@@ -1,0 +1,18 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Datapika Tasks: Reddit, TikTok and influencer scraping",
+  "description": "65 tested inputs for the Datapika scrapers on Apify, each with curl, Python and JavaScript calls: Reddit posts, comments, subreddits, users and Reddit Answers without a Reddit API key; TikTok, Douyin, Bilibili and Kuaishou videos, comments and subtitles; TikTok, Instagram, YouTube and Twitch influencers with emails and engagement. Billed per result.",
+  "folders": [
+    "docs"
+  ],
+  "rules": [
+    "Actors: openclawai/reddit-scraper, openclawai/influencer-finder, openclawai/tiktok-douyin-bilibili-scraper and openclawai/tiktok-scraper, all run through the Apify API.",
+    "Authenticate with an Apify API token in the Authorization: Bearer header, read from the APIFY_TOKEN environment variable. Never put the token in the input JSON or in committed code.",
+    "Set a cost cap on every run: maxTotalChargeUsd (query parameter or JavaScript option) or max_total_charge_usd (Python). Runs bill per result to the caller's Apify account.",
+    "Reddit tasks need no Reddit API key, Reddit app or Reddit login: the actor reads public Reddit data.",
+    "Start from a task's input and change only the values (subreddit, keyword, creator, dates). Keep the first run small, about 20 to 50 results, and raise limits once the output looks right.",
+    "run-sync-get-dataset-items returns the rows in one request for runs under 5 minutes. For longer runs, start the run, wait for it to finish, then read its default dataset.",
+    "Influencer Finder: set onlyWithEmail to true to keep, and pay for, only creators who published an email.",
+    "Dataset rows can also be downloaded as CSV, Excel or JSONL: GET /v2/datasets/{datasetId}/items?format=csv."
+  ]
+}

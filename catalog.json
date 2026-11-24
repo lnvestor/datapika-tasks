@@ -22,6 +22,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/nano-influencers-tiktok-instagram.json",
+   "doc": "docs/influencer-finder/nano-influencers-tiktok-instagram.md",
    "outputFields": [
     "name",
     "handle",
@@ -57,6 +58,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/booktok-creators-with-emails.json",
+   "doc": "docs/influencer-finder/booktok-creators-with-emails.md",
    "outputFields": [
     "name",
     "handle",
@@ -91,6 +93,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/tiktok-fitness-influencers-by-keyword.json",
+   "doc": "docs/influencer-finder/tiktok-fitness-influencers-by-keyword.md",
    "outputFields": [
     "name",
     "handle",
@@ -126,6 +129,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/high-engagement-tiktok-creators.json",
+   "doc": "docs/influencer-finder/high-engagement-tiktok-creators.md",
    "outputFields": [
     "handle",
     "platform",
@@ -165,6 +169,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/instagram-fitness-micro-influencers.json",
+   "doc": "docs/influencer-finder/instagram-fitness-micro-influencers.md",
    "outputFields": [
     "name",
     "handle",
@@ -200,6 +205,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/instagram-fashion-micro-influencers.json",
+   "doc": "docs/influencer-finder/instagram-fashion-micro-influencers.md",
    "outputFields": [
     "name",
     "handle",
@@ -234,6 +240,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/tiktok-skincare-creators-with-emails.json",
+   "doc": "docs/influencer-finder/tiktok-skincare-creators-with-emails.md",
    "outputFields": [
     "name",
     "handle",
@@ -268,6 +275,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/tiktok-pet-influencers-with-emails.json",
+   "doc": "docs/influencer-finder/tiktok-pet-influencers-with-emails.md",
    "outputFields": [
     "name",
     "handle",
@@ -304,6 +312,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/instagram-food-micro-influencers.json",
+   "doc": "docs/influencer-finder/instagram-food-micro-influencers.md",
    "outputFields": [
     "name",
     "handle",
@@ -337,6 +346,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/twitch-streamers-with-emails.json",
+   "doc": "docs/influencer-finder/twitch-streamers-with-emails.md",
    "outputFields": [
     "name",
     "handle",
@@ -372,6 +382,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/instagram-travel-micro-influencers.json",
+   "doc": "docs/influencer-finder/instagram-travel-micro-influencers.md",
    "outputFields": [
     "name",
     "handle",
@@ -405,6 +416,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/tiktok-recipe-creators-with-emails.json",
+   "doc": "docs/influencer-finder/tiktok-recipe-creators-with-emails.md",
    "outputFields": [
     "name",
     "handle",
@@ -441,6 +453,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/instagram-home-decor-micro-influencers.json",
+   "doc": "docs/influencer-finder/instagram-home-decor-micro-influencers.md",
    "outputFields": [
     "name",
     "handle",
@@ -474,6 +487,7 @@
     "maxCreators": 25
    },
    "inputFile": "influencer-finder/podcast-hosts-with-emails.json",
+   "doc": "docs/influencer-finder/podcast-hosts-with-emails.md",
    "outputFields": [
     "name",
     "handle",
@@ -504,6 +518,7 @@
     "maxItems": 25
    },
    "inputFile": "reddit-scraper/wallstreetbets-tracker-top-posts.json",
+   "doc": "docs/reddit-scraper/wallstreetbets-tracker-top-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -534,6 +549,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/claudeai-subreddit-top-posts.json",
+   "doc": "docs/reddit-scraper/claudeai-subreddit-top-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -562,6 +578,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-video-posts-only.json",
+   "doc": "docs/reddit-scraper/reddit-video-posts-only.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -591,6 +608,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/chatgpt-subreddit-top-posts.json",
+   "doc": "docs/reddit-scraper/chatgpt-subreddit-top-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -619,6 +637,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/best-of-reddit-top-posts-all-time.json",
+   "doc": "docs/reddit-scraper/best-of-reddit-top-posts-all-time.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -646,6 +665,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/reddit-user-search.json",
+   "doc": "docs/reddit-scraper/reddit-user-search.md",
    "outputFields": [
     "username",
     "url",
@@ -672,6 +692,7 @@
     ]
    },
    "inputFile": "reddit-scraper/reddit-ai-answers.json",
+   "doc": "docs/reddit-scraper/reddit-ai-answers.md",
    "outputFields": [
     "markdown",
     "follow_ups",
@@ -697,6 +718,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-job-hunting-posts.json",
+   "doc": "docs/reddit-scraper/reddit-job-hunting-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -727,6 +749,7 @@
     "maxItems": 10
    },
    "inputFile": "reddit-scraper/reddit-ama-threads.json",
+   "doc": "docs/reddit-scraper/reddit-ama-threads.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -757,6 +780,7 @@
     "maxItems": 20
    },
    "inputFile": "reddit-scraper/search-reddit-comments-by-keyword.json",
+   "doc": "docs/reddit-scraper/search-reddit-comments-by-keyword.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -786,6 +810,7 @@
     "maxItems": 25
    },
    "inputFile": "reddit-scraper/reddit-api-alternative-no-key.json",
+   "doc": "docs/reddit-scraper/reddit-api-alternative-no-key.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -814,6 +839,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-archive-search-old-posts.json",
+   "doc": "docs/reddit-scraper/reddit-archive-search-old-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -841,6 +867,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/reddit-rss-feed-alternative.json",
+   "doc": "docs/reddit-scraper/reddit-rss-feed-alternative.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -868,6 +895,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-rising-posts.json",
+   "doc": "docs/reddit-scraper/reddit-rising-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -896,6 +924,7 @@
     "maxItems": 25
    },
    "inputFile": "reddit-scraper/reddit-mcp-search.json",
+   "doc": "docs/reddit-scraper/reddit-mcp-search.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -925,6 +954,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/reddit-hot-posts-multi-subreddit.json",
+   "doc": "docs/reddit-scraper/reddit-hot-posts-multi-subreddit.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -951,6 +981,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/reddit-post-history-of-user.json",
+   "doc": "docs/reddit-scraper/reddit-post-history-of-user.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -978,6 +1009,7 @@
     "maxItems": 25
    },
    "inputFile": "reddit-scraper/subreddit-stats-members.json",
+   "doc": "docs/reddit-scraper/subreddit-stats-members.md",
    "outputFields": [
     "name",
     "title",
@@ -1005,6 +1037,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-post-search-keyword-date.json",
+   "doc": "docs/reddit-scraper/reddit-post-search-keyword-date.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1035,6 +1068,7 @@
     "maxItems": 40
    },
    "inputFile": "reddit-scraper/reddit-startup-app-ideas.json",
+   "doc": "docs/reddit-scraper/reddit-startup-app-ideas.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1065,6 +1099,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/reddit-startup-feedback-threads.json",
+   "doc": "docs/reddit-scraper/reddit-startup-feedback-threads.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1093,6 +1128,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-keyword-search-posts.json",
+   "doc": "docs/reddit-scraper/reddit-keyword-search-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1120,6 +1156,7 @@
     "maxItems": 10
    },
    "inputFile": "reddit-scraper/reddit-user-lookup-karma.json",
+   "doc": "docs/reddit-scraper/reddit-user-lookup-karma.md",
    "outputFields": [
     "username",
     "url",
@@ -1146,6 +1183,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/reddit-user-profile-and-history.json",
+   "doc": "docs/reddit-scraper/reddit-user-profile-and-history.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1173,6 +1211,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/find-subreddits-by-topic.json",
+   "doc": "docs/reddit-scraper/find-subreddits-by-topic.md",
    "outputFields": [
     "name",
     "title",
@@ -1199,6 +1238,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-search-inside-subreddit.json",
+   "doc": "docs/reddit-scraper/reddit-search-inside-subreddit.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1225,6 +1265,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/subreddit-top-posts-this-week.json",
+   "doc": "docs/reddit-scraper/subreddit-top-posts-this-week.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1251,6 +1292,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-comment-history-of-user.json",
+   "doc": "docs/reddit-scraper/reddit-comment-history-of-user.md",
    "outputFields": [
     "body",
     "author",
@@ -1279,6 +1321,7 @@
     "maxItems": 20
    },
    "inputFile": "reddit-scraper/reddit-product-recommendations.json",
+   "doc": "docs/reddit-scraper/reddit-product-recommendations.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1307,6 +1350,7 @@
     "maxItems": 200
    },
    "inputFile": "reddit-scraper/reddit-dataset-json-csv.json",
+   "doc": "docs/reddit-scraper/reddit-dataset-json-csv.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1335,6 +1379,7 @@
     "maxItems": 5
    },
    "inputFile": "reddit-scraper/reddit-post-with-comments.json",
+   "doc": "docs/reddit-scraper/reddit-post-with-comments.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1363,6 +1408,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-controversial-posts.json",
+   "doc": "docs/reddit-scraper/reddit-controversial-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1392,6 +1438,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/reddit-lead-generation-posts.json",
+   "doc": "docs/reddit-scraper/reddit-lead-generation-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1420,6 +1467,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/reddit-brand-mentions-monitor.json",
+   "doc": "docs/reddit-scraper/reddit-brand-mentions-monitor.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1450,6 +1498,7 @@
     "maxItems": 25
    },
    "inputFile": "reddit-scraper/reddit-question-threads-askreddit.json",
+   "doc": "docs/reddit-scraper/reddit-question-threads-askreddit.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1478,6 +1527,7 @@
     "maxItems": 300
    },
    "inputFile": "reddit-scraper/reddit-posts-by-date-range.json",
+   "doc": "docs/reddit-scraper/reddit-posts-by-date-range.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1508,6 +1558,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/reddit-crypto-sentiment-posts.json",
+   "doc": "docs/reddit-scraper/reddit-crypto-sentiment-posts.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1538,6 +1589,7 @@
     "maxItems": 50
    },
    "inputFile": "reddit-scraper/reddit-competitor-research-search.json",
+   "doc": "docs/reddit-scraper/reddit-competitor-research-search.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1564,6 +1616,7 @@
     "maxItems": 100
    },
    "inputFile": "reddit-scraper/subreddit-new-posts-monitor.json",
+   "doc": "docs/reddit-scraper/subreddit-new-posts-monitor.md",
    "outputFields": [
     "title",
     "subreddit",
@@ -1592,6 +1645,7 @@
     "downloadVideos": true
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-video-downloader.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/tiktok-video-downloader.md",
    "outputFields": [
     "platform",
     "title",
@@ -1618,6 +1672,7 @@
     "maxItems": 200
    },
    "inputFile": "tiktok-scraper/booktok-tiktok-hashtag-videos.json",
+   "doc": "docs/tiktok-scraper/booktok-tiktok-hashtag-videos.md",
    "outputFields": [
     "platform",
     "title",
@@ -1645,6 +1700,7 @@
     "downloadVideos": true
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/douyin-downloader-hd-videos.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/douyin-downloader-hd-videos.md",
    "outputFields": [
     "platform",
     "title",
@@ -1671,6 +1727,7 @@
     ]
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-influencer-profile-stats.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/tiktok-influencer-profile-stats.md",
    "outputFields": [
     "platform",
     "item_id",
@@ -1700,6 +1757,7 @@
     "downloadVideos": true
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/kuaishou-video-downloader.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/kuaishou-video-downloader.md",
    "outputFields": [
     "platform",
     "title",
@@ -1727,6 +1785,7 @@
     "maxItems": 20
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-creator-posts.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/tiktok-creator-posts.md",
    "outputFields": [
     "platform",
     "title",
@@ -1753,6 +1812,7 @@
     "maxItems": 1000
    },
    "inputFile": "tiktok-scraper/nba-tiktok-followers-list.json",
+   "doc": "docs/tiktok-scraper/nba-tiktok-followers-list.md",
    "outputFields": [
     "platform",
     "author_name",
@@ -1776,6 +1836,7 @@
     "maxItems": 50
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-video-comments.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/tiktok-video-comments.md",
    "outputFields": [
     "platform",
     "author_name",
@@ -1800,6 +1861,7 @@
     ]
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/bilibili-subtitles-download.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/bilibili-subtitles-download.md",
    "outputFields": [
     "platform",
     "item_id",
@@ -1821,6 +1883,7 @@
     "maxItems": 20
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/douyin-trending-videos.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/douyin-trending-videos.md",
    "outputFields": [
     "platform",
     "item_id",
@@ -1844,6 +1907,7 @@
     ]
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-fake-views-checker.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/tiktok-fake-views-checker.md",
    "outputFields": [
     "video",
     "total_views",
@@ -1872,6 +1936,7 @@
     "maxItems": 20
    },
    "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-and-douyin-creator-videos.json",
+   "doc": "docs/tiktok-douyin-bilibili-scraper/tiktok-and-douyin-creator-videos.md",
    "outputFields": [
     "platform",
     "title",
