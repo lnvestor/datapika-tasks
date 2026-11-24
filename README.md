@@ -4,6 +4,8 @@
 
 Browse and search them, with sample rows, at **[datapika.com/tasks](https://datapika.com/tasks)**. Machine-readable list: [`catalog.json`](catalog.json) (also served at [datapika.com/tasks.json](https://datapika.com/tasks.json)). Each task also has a page in [`docs/`](docs) with its input and ready-to-run curl, Python and JavaScript calls.
 
+The same docs are on Context7 as library [`/lnvestor/datapika-tasks`](https://context7.com/lnvestor/datapika-tasks), so coding agents that use the Context7 MCP server or API can pull any task's snippets by name.
+
 ## Run a task
 
 You need a free [Apify](https://apify.com) account and its API token. Runs bill per result to your Apify account, and the examples below cap a run at $1.
