@@ -1,0 +1,28 @@
+name: Refresh Context7 docs
+
+# Re-indexes this repo on Context7 (/lnvestor/datapika-tasks) whenever the task docs change,
+# so new tasks reach coding agents without waiting for Context7's own refresh cycle.
+on:
+  push:
+    branches: [main]
+    paths: ["docs/**", "README.md", "context7.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Context7 refresh
+        env:
+          CONTEXT7_API_KEY: ${{ secrets.CONTEXT7_API_KEY }}
+        run: |
+          code=$(curl -s -o response.json -w '%{http_code}' -X POST https://context7.com/api/v1/refresh \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $CONTEXT7_API_KEY" \
+            -d '{"libraryName": "/${{ github.repository }}"}')
+          echo "HTTP $code"; cat response.json; echo
+          if [ "$code" = "429" ]; then echo "::warning::Context7 daily refresh limit reached; it will refresh on its own cycle."; exit 0; fi
+          [ "$code" -ge 200 ] && [ "$code" -lt 300 ]
