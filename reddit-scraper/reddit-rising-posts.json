@@ -1,0 +1,7 @@
+{
+  "subreddits": [
+    "all"
+  ],
+  "sort": "rising",
+  "maxItems": 100
+}

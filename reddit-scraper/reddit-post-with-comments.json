@@ -1,0 +1,8 @@
+{
+  "startUrls": [
+    "https://www.reddit.com/r/Python/top/?t=month"
+  ],
+  "includeComments": true,
+  "maxCommentsPerPost": 200,
+  "maxItems": 5
+}

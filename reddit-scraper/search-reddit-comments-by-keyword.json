@@ -1,0 +1,10 @@
+{
+  "searches": [
+    "best password manager"
+  ],
+  "sort": "relevance",
+  "time": "year",
+  "includeComments": true,
+  "maxCommentsPerPost": 50,
+  "maxItems": 20
+}

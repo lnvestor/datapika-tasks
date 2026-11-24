@@ -1,0 +1,10 @@
+{
+  "subreddits": [
+    "SomebodyMakeThis",
+    "AppIdeas",
+    "Startup_Ideas"
+  ],
+  "sort": "top",
+  "time": "month",
+  "maxItems": 40
+}

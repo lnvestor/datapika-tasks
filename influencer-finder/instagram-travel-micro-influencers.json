@@ -1,0 +1,13 @@
+{
+  "keywords": [
+    "travel",
+    "travel blogger"
+  ],
+  "platforms": [
+    "instagram"
+  ],
+  "minFollowers": 5000,
+  "maxFollowers": 100000,
+  "onlyWithEmail": true,
+  "maxCreators": 25
+}

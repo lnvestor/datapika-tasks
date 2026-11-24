@@ -1,0 +1,14 @@
+{
+  "keywords": [
+    "beauty",
+    "makeup"
+  ],
+  "platforms": [
+    "tiktok",
+    "instagram"
+  ],
+  "minFollowers": 1000,
+  "maxFollowers": 10000,
+  "onlyWithEmail": true,
+  "maxCreators": 25
+}

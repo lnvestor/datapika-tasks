@@ -1,0 +1,134 @@
+# Datapika ready-made scraping tasks
+
+65 tested inputs for the [Datapika](https://datapika.com) scrapers on Apify: Reddit, TikTok, Douyin, Bilibili, Kuaishou and influencer search. Each file is the exact JSON input of one task. Every task was run against the live actor on 2026-11-23 before it was published, and its page on datapika.com shows the run date, the output columns and real sample rows.
+
+Browse and search them, with sample rows, at **[datapika.com/tasks](https://datapika.com/tasks)**. Machine-readable list: [`catalog.json`](catalog.json) (also served at [datapika.com/tasks.json](https://datapika.com/tasks.json)).
+
+## Run a task
+
+You need a free [Apify](https://apify.com) account and its API token. Runs bill per result to your Apify account, and the examples below cap a run at $1.
+
+**In the browser:** open the task's page on datapika.com, click **Copy input**, then **Run on Apify**. Paste the input in the actor's JSON tab and press Start.
+
+**From the command line:**
+
+```bash
+export APIFY_TOKEN=your_token
+./run.sh reddit-scraper/reddit-user-search.json
+```
+
+`run.sh` sends the file to the actor named by its folder and prints the rows as JSON. The same call with curl:
+
+```bash
+curl -s -X POST "https://api.apify.com/v2/acts/openclawai~reddit-scraper/run-sync-get-dataset-items?maxTotalChargeUsd=1" \
+  -H "Authorization: Bearer $APIFY_TOKEN" -H "Content-Type: application/json" \
+  --data @reddit-scraper/reddit-user-search.json
+```
+
+**From Python** (`pip install apify-client`):
+
+```python
+import json, os
+from apify_client import ApifyClient
+
+client = ApifyClient(os.environ["APIFY_TOKEN"])
+run = client.actor("openclawai/reddit-scraper").call(
+    run_input=json.load(open("reddit-scraper/reddit-user-search.json")), max_total_charge_usd=1)
+dataset_id = run["defaultDatasetId"] if isinstance(run, dict) else run.default_dataset_id  # client 1.x / 2.x+
+for row in client.dataset(dataset_id).iterate_items():
+    print(row)
+```
+
+**From an AI agent:** add the Apify MCP server (`https://mcp.apify.com`) to Claude, ChatGPT, Cursor or any MCP client and ask: "Run openclawai/reddit-scraper with this input: …". More agent setups: [datapika.com/mcp](https://datapika.com/mcp) and the [examples repo](https://github.com/lnvestor/datapika-examples).
+
+Change any value to make your own task: a different subreddit, keyword, creator or date range. Each task page lists the variations worth trying.
+
+## Reddit Scraper (39 tasks)
+
+Posts, comments, subreddits, users and Reddit Answers. All Reddit Scraper tasks with sample rows: [datapika.com/tasks/reddit-scraper](https://datapika.com/tasks/reddit-scraper)
+
+| Task | What it does | Input | Page |
+|---|---|---|---|
+| WallStreetBets Tracker: Top Posts and Comments | Track today's top r/wallstreetbets posts with comments for stock mentions and sentiment. No login or API key. JSON or CSV. | [`wallstreetbets-tracker-top-posts.json`](reddit-scraper/wallstreetbets-tracker-top-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/wallstreetbets-tracker-top-posts) |
+| r/ClaudeAI Top Posts and Comments This Week | Get the week's top r/ClaudeAI posts with comments: tips, bugs and feedback about Claude. No login or API key. JSON or CSV. | [`claudeai-subreddit-top-posts.json`](reddit-scraper/claudeai-subreddit-top-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/claudeai-subreddit-top-posts) |
+| Reddit Videos: Posts With Direct Video URLs | Get Reddit video posts with direct video URLs, titles and scores from any subreddit. No login or API key. JSON or CSV. | [`reddit-video-posts-only.json`](reddit-scraper/reddit-video-posts-only.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-video-posts-only) |
+| r/ChatGPT Top Posts and Comments This Week | Get the week's top r/ChatGPT posts with comments: prompts, news and user feedback. No login or API key. JSON or CSV. | [`chatgpt-subreddit-top-posts.json`](reddit-scraper/chatgpt-subreddit-top-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/chatgpt-subreddit-top-posts) |
+| Best of Reddit: Top Posts of All Time | Get the top Reddit posts of all time with score, comments, subreddit and links. No login or API key. JSON or CSV. | [`best-of-reddit-top-posts-all-time.json`](reddit-scraper/best-of-reddit-top-posts-all-time.json) | [page](https://datapika.com/tasks/reddit-scraper/best-of-reddit-top-posts-all-time) |
+| Reddit User Search: Find Users by Name | Search Reddit users by name or keyword and get karma, account age and profile links. No login or API key. JSON, CSV or Excel. | [`reddit-user-search.json`](reddit-scraper/reddit-user-search.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-user-search) |
+| Reddit Answers Scraper: AI Answers With Sources | Ask Reddit Answers any question and get the AI answer as markdown with the source posts and subreddits. No login. | [`reddit-ai-answers.json`](reddit-scraper/reddit-ai-answers.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-ai-answers) |
+| Reddit Remote Jobs: Hiring Posts From r/forhire | Get the newest hiring and remote job posts from r/forhire and r/remotejobs with links. No login or API key. JSON or CSV. | [`reddit-job-hunting-posts.json`](reddit-scraper/reddit-job-hunting-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-job-hunting-posts) |
+| Reddit AMA Threads With All Answers | Export top Reddit AMA threads from r/IAmA with the questions and answers in the comments. No login or API key. JSON or CSV. | [`reddit-ama-threads.json`](reddit-scraper/reddit-ama-threads.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-ama-threads) |
+| Search Reddit Comments: Keyword Threads | Find Reddit threads about a keyword and get all their comments: text, author, score and depth. No API key. JSON or CSV. | [`search-reddit-comments-by-keyword.json`](reddit-scraper/search-reddit-comments-by-keyword.json) | [page](https://datapika.com/tasks/reddit-scraper/search-reddit-comments-by-keyword) |
+| Reddit API Alternative: No API Key Needed | Get Reddit posts and comments without a Reddit API key or app approval. Top posts of the week with comments. JSON or CSV. | [`reddit-api-alternative-no-key.json`](reddit-scraper/reddit-api-alternative-no-key.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-api-alternative-no-key) |
+| Reddit Archive Search: Old Posts by Keyword | Search Reddit's archive by keyword across all time, most relevant first, with date, subreddit and score. No login or API key. JSON or CSV. | [`reddit-archive-search-old-posts.json`](reddit-scraper/reddit-archive-search-old-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-archive-search-old-posts) |
+| Reddit RSS Feed Alternative: New Posts as JSON | Get a subreddit's newest posts as clean JSON or CSV instead of an RSS feed, with score and full text. No API key. | [`reddit-rss-feed-alternative.json`](reddit-scraper/reddit-rss-feed-alternative.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-rss-feed-alternative) |
+| Reddit Trending: Rising Posts Before They Peak | Catch trending Reddit posts while they are rising, with score, comments and age. No login or API key. JSON or CSV. | [`reddit-rising-posts.json`](reddit-scraper/reddit-rising-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-rising-posts) |
+| Reddit MCP: Search Reddit From Claude or ChatGPT | Use Reddit search from Claude, ChatGPT or Cursor through the Apify MCP server. Posts by keyword, no Reddit API key. | [`reddit-mcp-search.json`](reddit-scraper/reddit-mcp-search.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-mcp-search) |
+| Hot Posts From Several Subreddits in One Run | Collect hot posts from several subreddits in one run, each row tagged with its subreddit. No login or API key. JSON or CSV. | [`reddit-hot-posts-multi-subreddit.json`](reddit-scraper/reddit-hot-posts-multi-subreddit.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-hot-posts-multi-subreddit) |
+| Reddit Post History of Any User | See a Reddit user's post history with subreddit, score, comments and date for each post. No login or API key. JSON or CSV. | [`reddit-post-history-of-user.json`](reddit-scraper/reddit-post-history-of-user.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-post-history-of-user) |
+| Subreddit Stats: Members, Description and Age | Get subreddit stats for any topic: member count, description and creation date. No login or API key. JSON or CSV. | [`subreddit-stats-members.json`](reddit-scraper/subreddit-stats-members.json) | [page](https://datapika.com/tasks/reddit-scraper/subreddit-stats-members) |
+| Reddit Post Search by Keyword and Date | Search Reddit posts by keyword and keep only those after a date, newest first. No login or API key. JSON or CSV. | [`reddit-post-search-keyword-date.json`](reddit-scraper/reddit-post-search-keyword-date.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-post-search-keyword-date) |
+| Startup and App Ideas From Reddit | Collect startup, SaaS and app ideas people post on Reddit, with votes and comments. No login or API key. JSON or CSV. | [`reddit-startup-app-ideas.json`](reddit-scraper/reddit-startup-app-ideas.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-startup-app-ideas) |
+| Startup Feedback Threads From r/startups and r/SaaS | Collect new startup and SaaS feedback threads with their comments from r/startups and r/SaaS. No API key. JSON or CSV. | [`reddit-startup-feedback-threads.json`](reddit-scraper/reddit-startup-feedback-threads.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-startup-feedback-threads) |
+| Reddit Search Tool: Posts by Keyword, No API Key | Search all of Reddit for posts by keyword, sorted by relevance, top, new or comments, with a time filter. No login. JSON or CSV. | [`reddit-keyword-search-posts.json`](reddit-scraper/reddit-keyword-search-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-keyword-search-posts) |
+| Reddit User Lookup: Karma and Account Age | Look up Reddit accounts by name: total karma, account creation date and profile link. No login or API key. JSON or CSV. | [`reddit-user-lookup-karma.json`](reddit-scraper/reddit-user-lookup-karma.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-user-lookup-karma) |
+| Reddit User History: Profile, Posts and Comments | Get any Reddit user's profile, karma, recent posts and comment history in one run. No login or API key. JSON or CSV. | [`reddit-user-profile-and-history.json`](reddit-scraper/reddit-user-profile-and-history.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-user-profile-and-history) |
+| Subreddit Finder: Search Subreddits by Topic | Find subreddits about any topic with member counts, descriptions and creation dates. No login or API key. JSON or CSV. | [`find-subreddits-by-topic.json`](reddit-scraper/find-subreddits-by-topic.json) | [page](https://datapika.com/tasks/reddit-scraper/find-subreddits-by-topic) |
+| Reddit Advanced Search: Keyword Inside a Subreddit | Search for a keyword inside one subreddit and get matching posts with score, comments and date. No login or API key. JSON or CSV. | [`reddit-search-inside-subreddit.json`](reddit-scraper/reddit-search-inside-subreddit.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-search-inside-subreddit) |
+| Subreddit Top Posts This Week: JSON or CSV | Export the top posts of any subreddit this week with score, comments, author and links. No login or API key. | [`subreddit-top-posts-this-week.json`](reddit-scraper/subreddit-top-posts-this-week.json) | [page](https://datapika.com/tasks/reddit-scraper/subreddit-top-posts-this-week) |
+| Reddit Comment History of Any User | Export a Reddit user's comment history with the subreddit, score and date of each comment. No login or API key. JSON or CSV. | [`reddit-comment-history-of-user.json`](reddit-scraper/reddit-comment-history-of-user.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-comment-history-of-user) |
+| What Reddit Recommends: Product Reviews | Find what Reddit recommends for any product category: top threads with comments. No login or API key. JSON or CSV. | [`reddit-product-recommendations.json`](reddit-scraper/reddit-product-recommendations.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-product-recommendations) |
+| Download a Reddit Dataset as JSON or CSV | Build a Reddit dataset from any subreddit: posts with score, comments, author and date. No login or API key. | [`reddit-dataset-json-csv.json`](reddit-scraper/reddit-dataset-json-csv.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-dataset-json-csv) |
+| Reddit Comments Scraper: Full Thread to JSON or CSV | Export Reddit posts with their full comment trees: author, score, depth and parent of every comment. No API key. JSON or CSV. | [`reddit-post-with-comments.json`](reddit-scraper/reddit-post-with-comments.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-post-with-comments) |
+| Reddit Controversial Posts of the Month | Get the most controversial posts of a subreddit this month, with score, upvote ratio and comments. No API key. JSON or CSV. | [`reddit-controversial-posts.json`](reddit-scraper/reddit-controversial-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-controversial-posts) |
+| Reddit Lead Generation: Posts Asking for Tools | Find Reddit posts where people ask for a tool or service like yours, from the last month. No login or API key. JSON or CSV. | [`reddit-lead-generation-posts.json`](reddit-scraper/reddit-lead-generation-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-lead-generation-posts) |
+| Reddit Keyword Alerts: Track Brand Mentions | Track Reddit posts from the last week that mention your brand, product or competitor. Schedule it for keyword alerts. No API key. JSON or CSV. | [`reddit-brand-mentions-monitor.json`](reddit-scraper/reddit-brand-mentions-monitor.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-brand-mentions-monitor) |
+| AskReddit Questions and Top Answers | Get today's top AskReddit questions with their best answers. No login or API key. JSON or CSV. | [`reddit-question-threads-askreddit.json`](reddit-scraper/reddit-question-threads-askreddit.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-question-threads-askreddit) |
+| Reddit Search by Date: Posts in a Date Range | Get Reddit posts from a subreddit between two dates with score, comments and author. No API key. JSON or CSV. | [`reddit-posts-by-date-range.json`](reddit-scraper/reddit-posts-by-date-range.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-posts-by-date-range) |
+| Reddit Crypto Sentiment: Top Posts and Comments | Get today's top r/CryptoCurrency posts with comments for sentiment analysis. No login or API key. JSON or CSV. | [`reddit-crypto-sentiment-posts.json`](reddit-scraper/reddit-crypto-sentiment-posts.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-crypto-sentiment-posts) |
+| Reddit Market Research: Competitor Threads | Find Reddit threads comparing products in your market, with comments, for competitor and market research. No API key. | [`reddit-competitor-research-search.json`](reddit-scraper/reddit-competitor-research-search.json) | [page](https://datapika.com/tasks/reddit-scraper/reddit-competitor-research-search) |
+| Monitor New Posts in a Subreddit | Get the newest posts in any subreddit on every run. Schedule it to monitor a community. No login or API key. JSON or CSV. | [`subreddit-new-posts-monitor.json`](reddit-scraper/subreddit-new-posts-monitor.json) | [page](https://datapika.com/tasks/reddit-scraper/subreddit-new-posts-monitor) |
+
+## Influencer Finder (14 tasks)
+
+TikTok, Instagram, YouTube and Twitch creators with emails and engagement. All Influencer Finder tasks with sample rows: [datapika.com/tasks/influencer-finder](https://datapika.com/tasks/influencer-finder)
+
+| Task | What it does | Input | Page |
+|---|---|---|---|
+| Nano Influencers With Emails on TikTok and Instagram | Find nano influencers (1K-10K followers) on TikTok and Instagram by niche, with engagement and published emails. Ideal for UGC and gifting. No login. | [`nano-influencers-tiktok-instagram.json`](influencer-finder/nano-influencers-tiktok-instagram.json) | [page](https://datapika.com/tasks/influencer-finder/nano-influencers-tiktok-instagram) |
+| BookTok Creators on TikTok With Emails | Find TikTok BookTok creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel. | [`booktok-creators-with-emails.json`](influencer-finder/booktok-creators-with-emails.json) | [page](https://datapika.com/tasks/influencer-finder/booktok-creators-with-emails) |
+| TikTok Fitness Influencers With Emails | Find TikTok fitness creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel. | [`tiktok-fitness-influencers-by-keyword.json`](influencer-finder/tiktok-fitness-influencers-by-keyword.json) | [page](https://datapika.com/tasks/influencer-finder/tiktok-fitness-influencers-by-keyword) |
+| High-Engagement TikTok Creators (5%+) | Find TikTok creators with an engagement rate of 5% or more, measured from their recent videos, with published emails. Skip inflated follower counts. | [`high-engagement-tiktok-creators.json`](influencer-finder/high-engagement-tiktok-creators.json) | [page](https://datapika.com/tasks/influencer-finder/high-engagement-tiktok-creators) |
+| Instagram Fitness Micro Influencers With Emails | Find Instagram fitness micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login. | [`instagram-fitness-micro-influencers.json`](influencer-finder/instagram-fitness-micro-influencers.json) | [page](https://datapika.com/tasks/influencer-finder/instagram-fitness-micro-influencers) |
+| Instagram Fashion Micro Influencers With Emails | Find Instagram fashion micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login. | [`instagram-fashion-micro-influencers.json`](influencer-finder/instagram-fashion-micro-influencers.json) | [page](https://datapika.com/tasks/influencer-finder/instagram-fashion-micro-influencers) |
+| TikTok Skincare Creators With Emails | Find TikTok skincare creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel. | [`tiktok-skincare-creators-with-emails.json`](influencer-finder/tiktok-skincare-creators-with-emails.json) | [page](https://datapika.com/tasks/influencer-finder/tiktok-skincare-creators-with-emails) |
+| TikTok Pet and Dog Influencers With Emails | Find TikTok pet and dog creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel. | [`tiktok-pet-influencers-with-emails.json`](influencer-finder/tiktok-pet-influencers-with-emails.json) | [page](https://datapika.com/tasks/influencer-finder/tiktok-pet-influencers-with-emails) |
+| Instagram Food Bloggers With Emails, 5K-100K | Find Instagram food micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login. | [`instagram-food-micro-influencers.json`](influencer-finder/instagram-food-micro-influencers.json) | [page](https://datapika.com/tasks/influencer-finder/instagram-food-micro-influencers) |
+| Twitch Streamers With Emails by Game or Topic | Find Twitch streamers by game or topic with followers, the game they last streamed and the business emails in their panels. No login. CSV or JSON. | [`twitch-streamers-with-emails.json`](influencer-finder/twitch-streamers-with-emails.json) | [page](https://datapika.com/tasks/influencer-finder/twitch-streamers-with-emails) |
+| Instagram Travel Micro Influencers With Emails | Find Instagram travel micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login. | [`instagram-travel-micro-influencers.json`](influencer-finder/instagram-travel-micro-influencers.json) | [page](https://datapika.com/tasks/influencer-finder/instagram-travel-micro-influencers) |
+| TikTok Food and Recipe Creators With Emails | Find TikTok food and recipe creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel. | [`tiktok-recipe-creators-with-emails.json`](influencer-finder/tiktok-recipe-creators-with-emails.json) | [page](https://datapika.com/tasks/influencer-finder/tiktok-recipe-creators-with-emails) |
+| Instagram Home Decor Influencers With Emails | Find Instagram home decor micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login. | [`instagram-home-decor-micro-influencers.json`](influencer-finder/instagram-home-decor-micro-influencers.json) | [page](https://datapika.com/tasks/influencer-finder/instagram-home-decor-micro-influencers) |
+| Podcast Host Emails by Topic | Find podcasts by topic with the host's contact email, episode count and website. Pitch guests or sponsorships. No login. CSV, JSON or Excel. | [`podcast-hosts-with-emails.json`](influencer-finder/podcast-hosts-with-emails.json) | [page](https://datapika.com/tasks/influencer-finder/podcast-hosts-with-emails) |
+
+## TikTok, Douyin & Bilibili Scraper (12 tasks)
+
+Videos, profiles, comments, subtitles and trending feeds. All TikTok, Douyin & Bilibili Scraper tasks with sample rows: [datapika.com/tasks/tiktok-douyin-bilibili-scraper](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper)
+
+| Task | What it does | Input | Page |
+|---|---|---|---|
+| TikTok Video Downloader: MP4 Link From Any Video | Download TikTok videos: paste a link and get the watermark-free video file link with title, author and stats. No login. | [`tiktok-video-downloader.json`](tiktok-douyin-bilibili-scraper/tiktok-video-downloader.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-video-downloader) |
+| BookTok Videos: TikTok #booktok Data Export | Export #booktok TikTok videos with views, likes, comments, authors and captions. No login or API key. JSON or CSV. | [`booktok-tiktok-hashtag-videos.json`](tiktok-scraper/booktok-tiktok-hashtag-videos.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/booktok-tiktok-hashtag-videos) |
+| Douyin Downloader: Download Douyin Videos | Download Douyin videos without watermark: paste a Douyin link and get the video file link, title, author and stats. No login. JSON or CSV. | [`douyin-downloader-hd-videos.json`](tiktok-douyin-bilibili-scraper/douyin-downloader-hd-videos.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/douyin-downloader-hd-videos) |
+| TikTok Follower Count and Profile Stats | Check any TikTok account's follower count, following, likes, video count and bio. No login or API key. JSON or CSV. | [`tiktok-influencer-profile-stats.json`](tiktok-douyin-bilibili-scraper/tiktok-influencer-profile-stats.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-influencer-profile-stats) |
+| Kuaishou Downloader: Download a Creator's Videos | Download Kuaishou videos without watermark: a creator's latest videos with file links, titles and stats. No login. JSON or CSV. | [`kuaishou-video-downloader.json`](tiktok-douyin-bilibili-scraper/kuaishou-video-downloader.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/kuaishou-video-downloader) |
+| TikTok Scraper: Creator Videos With Views and Likes | Scrape a TikTok creator's latest videos with views, likes, comments, shares, hashtags and dates. No login or API key. JSON or CSV. | [`tiktok-creator-posts.json`](tiktok-douyin-bilibili-scraper/tiktok-creator-posts.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-creator-posts) |
+| TikTok Followers List Export | Export the followers list of a TikTok account: usernames, names, follower counts and bios. No login or API key. JSON or CSV. | [`nba-tiktok-followers-list.json`](tiktok-scraper/nba-tiktok-followers-list.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/nba-tiktok-followers-list) |
+| TikTok Comments Export: Comments to CSV or JSON | Export TikTok comments from any video: text, author, likes and date for each comment. No login or API key. CSV or JSON. | [`tiktok-video-comments.json`](tiktok-douyin-bilibili-scraper/tiktok-video-comments.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-video-comments) |
+| Bilibili Subtitles Download: Video Captions | Download Bilibili video subtitles and captions: the full caption text plus the timed subtitle file. Paste a BV link. No login. | [`bilibili-subtitles-download.json`](tiktok-douyin-bilibili-scraper/bilibili-subtitles-download.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/bilibili-subtitles-download) |
+| Douyin Trending Videos Today | Get today's trending Douyin videos with plays, likes, comments, author and links. No login or API key. JSON or CSV. | [`douyin-trending-videos.json`](tiktok-douyin-bilibili-scraper/douyin-trending-videos.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/douyin-trending-videos) |
+| TikTok Fake Views Checker | Check whether a TikTok video's views look fake: an authenticity report from its view and engagement patterns. No login. | [`tiktok-fake-views-checker.json`](tiktok-douyin-bilibili-scraper/tiktok-fake-views-checker.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-fake-views-checker) |
+| TikTok and Douyin Creator Videos in One Run | Get a creator's videos from TikTok and Douyin in one run, with one shared set of columns. No login or API key. JSON or CSV. | [`tiktok-and-douyin-creator-videos.json`](tiktok-douyin-bilibili-scraper/tiktok-and-douyin-creator-videos.json) | [page](https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-and-douyin-creator-videos) |
+
+## About
+
+Datapika maintains these scrapers and publishes them under the `openclawai` account on Apify. Inputs here are MIT licensed; the data you collect is public web content, and you are responsible for using it lawfully. Code examples for more actors (jobs, Trustpilot, Google Maps, ads, travel) are in [lnvestor/datapika-examples](https://github.com/lnvestor/datapika-examples).

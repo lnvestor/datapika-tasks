@@ -1,0 +1,7 @@
+{
+  "subreddits": [
+    "technology"
+  ],
+  "sort": "new",
+  "maxItems": 100
+}

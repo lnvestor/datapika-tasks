@@ -1,0 +1,9 @@
+{
+  "subreddits": [
+    "MachineLearning"
+  ],
+  "sort": "new",
+  "postedAfter": "2026-11-01",
+  "postedBefore": "2026-11-20",
+  "maxItems": 300
+}

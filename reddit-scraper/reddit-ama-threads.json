@@ -1,0 +1,10 @@
+{
+  "subreddits": [
+    "IAmA"
+  ],
+  "sort": "top",
+  "time": "month",
+  "includeComments": true,
+  "maxCommentsPerPost": 300,
+  "maxItems": 10
+}

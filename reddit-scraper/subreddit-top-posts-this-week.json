@@ -1,0 +1,6 @@
+{
+  "startUrls": [
+    "https://www.reddit.com/r/Python/top/?t=week"
+  ],
+  "maxItems": 100
+}

@@ -1,0 +1,10 @@
+{
+  "subreddits": [
+    "webdev"
+  ],
+  "sort": "top",
+  "time": "week",
+  "includeComments": true,
+  "maxCommentsPerPost": 20,
+  "maxItems": 25
+}

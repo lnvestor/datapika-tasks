@@ -1,0 +1,10 @@
+{
+  "subreddits": [
+    "CryptoCurrency"
+  ],
+  "sort": "top",
+  "time": "day",
+  "includeComments": true,
+  "maxCommentsPerPost": 20,
+  "maxItems": 50
+}

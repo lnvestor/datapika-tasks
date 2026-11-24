@@ -1,0 +1,8 @@
+{
+  "searches": [
+    "claude code"
+  ],
+  "sort": "relevance",
+  "time": "month",
+  "maxItems": 100
+}

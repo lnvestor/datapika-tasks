@@ -1,0 +1,8 @@
+{
+  "subreddits": [
+    "forhire",
+    "remotejobs"
+  ],
+  "sort": "new",
+  "maxItems": 100
+}

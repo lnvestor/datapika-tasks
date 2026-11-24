@@ -1,0 +1,9 @@
+{
+  "subreddits": [
+    "technology",
+    "programming",
+    "datascience"
+  ],
+  "sort": "hot",
+  "maxItems": 50
+}

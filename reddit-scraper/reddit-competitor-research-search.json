@@ -1,0 +1,10 @@
+{
+  "searches": [
+    "best CRM for small business"
+  ],
+  "sort": "relevance",
+  "time": "year",
+  "includeComments": true,
+  "maxCommentsPerPost": 30,
+  "maxItems": 50
+}

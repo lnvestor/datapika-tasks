@@ -1,0 +1,10 @@
+{
+  "subreddits": [
+    "AskReddit"
+  ],
+  "sort": "top",
+  "time": "day",
+  "includeComments": true,
+  "maxCommentsPerPost": 25,
+  "maxItems": 25
+}

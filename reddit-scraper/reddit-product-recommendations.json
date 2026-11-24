@@ -1,0 +1,10 @@
+{
+  "searches": [
+    "best noise cancelling headphones"
+  ],
+  "sort": "relevance",
+  "time": "year",
+  "includeComments": true,
+  "maxCommentsPerPost": 30,
+  "maxItems": 20
+}

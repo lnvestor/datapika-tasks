@@ -1,0 +1,9 @@
+{
+  "mode": "user_posts",
+  "platform": "kuaishou",
+  "urls": [
+    "https://v.kuaishou.com/KcdKDwFp"
+  ],
+  "maxItems": 10,
+  "downloadVideos": true
+}

@@ -1,0 +1,8 @@
+{
+  "subreddits": [
+    "videos"
+  ],
+  "sort": "top",
+  "time": "week",
+  "maxItems": 100
+}

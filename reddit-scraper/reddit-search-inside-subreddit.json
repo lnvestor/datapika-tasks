@@ -1,0 +1,8 @@
+{
+  "searches": [
+    "uv package manager"
+  ],
+  "searchSubreddit": "Python",
+  "sort": "relevance",
+  "maxItems": 100
+}

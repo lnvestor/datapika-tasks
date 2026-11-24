@@ -1,0 +1,1889 @@
+{
+ "generatedAt": "2026-11-23",
+ "count": 65,
+ "tasks": [
+  {
+   "slug": "nano-influencers-tiktok-instagram",
+   "title": "Nano Influencers With Emails on TikTok and Instagram",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find nano influencers (1K-10K followers) on TikTok and Instagram by niche, with engagement and published emails. Ideal for UGC and gifting. No login.",
+   "input": {
+    "keywords": [
+     "beauty",
+     "makeup"
+    ],
+    "platforms": [
+     "tiktok",
+     "instagram"
+    ],
+    "minFollowers": 1000,
+    "maxFollowers": 10000,
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/nano-influencers-tiktok-instagram.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "view_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "rate_card_from_usd",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/nano-influencers-tiktok-instagram"
+  },
+  {
+   "slug": "booktok-creators-with-emails",
+   "title": "BookTok Creators on TikTok With Emails",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find TikTok BookTok creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel.",
+   "input": {
+    "keywords": [
+     "booktok",
+     "book recommendations"
+    ],
+    "platforms": [
+     "tiktok"
+    ],
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/booktok-creators-with-emails.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "view_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/booktok-creators-with-emails"
+  },
+  {
+   "slug": "tiktok-fitness-influencers-by-keyword",
+   "title": "TikTok Fitness Influencers With Emails",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find TikTok fitness creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel.",
+   "input": {
+    "keywords": [
+     "fitness coach",
+     "home workout"
+    ],
+    "platforms": [
+     "tiktok"
+    ],
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/tiktok-fitness-influencers-by-keyword.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "view_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/tiktok-fitness-influencers-by-keyword"
+  },
+  {
+   "slug": "high-engagement-tiktok-creators",
+   "title": "High-Engagement TikTok Creators (5%+)",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find TikTok creators with an engagement rate of 5% or more, measured from their recent videos, with published emails. Skip inflated follower counts.",
+   "input": {
+    "keywords": [
+     "cooking",
+     "recipes"
+    ],
+    "platforms": [
+     "tiktok"
+    ],
+    "minEngagementRate": "5",
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/high-engagement-tiktok-creators.json",
+   "outputFields": [
+    "handle",
+    "platform",
+    "followers",
+    "audience_size",
+    "avg_views",
+    "median_views",
+    "view_rate_pct",
+    "avg_likes_per_post",
+    "engagement_rate_pct",
+    "posts_per_week",
+    "last_post_at",
+    "sponsored_posts",
+    "brands_mentioned",
+    "posts_sampled",
+    "follower_growth_6m_pct"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/high-engagement-tiktok-creators"
+  },
+  {
+   "slug": "instagram-fitness-micro-influencers",
+   "title": "Instagram Fitness Micro Influencers With Emails",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find Instagram fitness micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login.",
+   "input": {
+    "keywords": [
+     "fitness",
+     "personal trainer"
+    ],
+    "platforms": [
+     "instagram"
+    ],
+    "minFollowers": 5000,
+    "maxFollowers": 100000,
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/instagram-fitness-micro-influencers.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/instagram-fitness-micro-influencers"
+  },
+  {
+   "slug": "instagram-fashion-micro-influencers",
+   "title": "Instagram Fashion Micro Influencers With Emails",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find Instagram fashion micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login.",
+   "input": {
+    "keywords": [
+     "fashion",
+     "outfit ideas"
+    ],
+    "platforms": [
+     "instagram"
+    ],
+    "minFollowers": 5000,
+    "maxFollowers": 100000,
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/instagram-fashion-micro-influencers.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "rate_card_from_usd",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/instagram-fashion-micro-influencers"
+  },
+  {
+   "slug": "tiktok-skincare-creators-with-emails",
+   "title": "TikTok Skincare Creators With Emails",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find TikTok skincare creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel.",
+   "input": {
+    "keywords": [
+     "skincare routine",
+     "skincare tips"
+    ],
+    "platforms": [
+     "tiktok"
+    ],
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/tiktok-skincare-creators-with-emails.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "view_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/tiktok-skincare-creators-with-emails"
+  },
+  {
+   "slug": "tiktok-pet-influencers-with-emails",
+   "title": "TikTok Pet and Dog Influencers With Emails",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find TikTok pet and dog creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel.",
+   "input": {
+    "keywords": [
+     "dog",
+     "pet care"
+    ],
+    "platforms": [
+     "tiktok"
+    ],
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/tiktok-pet-influencers-with-emails.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "view_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/tiktok-pet-influencers-with-emails"
+  },
+  {
+   "slug": "instagram-food-micro-influencers",
+   "title": "Instagram Food Bloggers With Emails, 5K-100K",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find Instagram food micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login.",
+   "input": {
+    "keywords": [
+     "food blogger",
+     "recipes"
+    ],
+    "platforms": [
+     "instagram"
+    ],
+    "minFollowers": 5000,
+    "maxFollowers": 100000,
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/instagram-food-micro-influencers.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/instagram-food-micro-influencers"
+  },
+  {
+   "slug": "twitch-streamers-with-emails",
+   "title": "Twitch Streamers With Emails by Game or Topic",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find Twitch streamers by game or topic with followers, the game they last streamed and the business emails in their panels. No login. CSV or JSON.",
+   "input": {
+    "keywords": [
+     "minecraft",
+     "fortnite"
+    ],
+    "platforms": [
+     "twitch"
+    ],
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/twitch-streamers-with-emails.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "view_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/twitch-streamers-with-emails"
+  },
+  {
+   "slug": "instagram-travel-micro-influencers",
+   "title": "Instagram Travel Micro Influencers With Emails",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find Instagram travel micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login.",
+   "input": {
+    "keywords": [
+     "travel",
+     "travel blogger"
+    ],
+    "platforms": [
+     "instagram"
+    ],
+    "minFollowers": 5000,
+    "maxFollowers": 100000,
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/instagram-travel-micro-influencers.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/instagram-travel-micro-influencers"
+  },
+  {
+   "slug": "tiktok-recipe-creators-with-emails",
+   "title": "TikTok Food and Recipe Creators With Emails",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find TikTok food and recipe creators by keyword with followers, engagement from recent videos and published emails. No login. CSV, JSON or Excel.",
+   "input": {
+    "keywords": [
+     "easy recipes",
+     "home cooking"
+    ],
+    "platforms": [
+     "tiktok"
+    ],
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/tiktok-recipe-creators-with-emails.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "view_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/tiktok-recipe-creators-with-emails"
+  },
+  {
+   "slug": "instagram-home-decor-micro-influencers",
+   "title": "Instagram Home Decor Influencers With Emails",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find Instagram home decor micro influencers (5K-100K followers) by keyword with engagement, sponsored posts and published emails. No login.",
+   "input": {
+    "keywords": [
+     "home decor",
+     "interior styling"
+    ],
+    "platforms": [
+     "instagram"
+    ],
+    "minFollowers": 5000,
+    "maxFollowers": 100000,
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/instagram-home-decor-micro-influencers.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "followers",
+    "engagement_rate_pct",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/instagram-home-decor-micro-influencers"
+  },
+  {
+   "slug": "podcast-hosts-with-emails",
+   "title": "Podcast Host Emails by Topic",
+   "actor": "openclawai/influencer-finder",
+   "description": "Find podcasts by topic with the host's contact email, episode count and website. Pitch guests or sponsorships. No login. CSV, JSON or Excel.",
+   "input": {
+    "keywords": [
+     "marketing",
+     "entrepreneurship"
+    ],
+    "platforms": [
+     "podcast"
+    ],
+    "onlyWithEmail": true,
+    "maxCreators": 25
+   },
+   "inputFile": "influencer-finder/podcast-hosts-with-emails.json",
+   "outputFields": [
+    "name",
+    "handle",
+    "platform",
+    "email",
+    "email_status",
+    "lead_score",
+    "lead_grade",
+    "matched_keyword",
+    "profile_url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/influencer-finder/podcast-hosts-with-emails"
+  },
+  {
+   "slug": "wallstreetbets-tracker-top-posts",
+   "title": "WallStreetBets Tracker: Top Posts and Comments",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Track today's top r/wallstreetbets posts with comments for stock mentions and sentiment. No login or API key. JSON or CSV.",
+   "input": {
+    "subreddits": [
+     "wallstreetbets"
+    ],
+    "sort": "top",
+    "time": "day",
+    "includeComments": true,
+    "maxCommentsPerPost": 30,
+    "maxItems": 25
+   },
+   "inputFile": "reddit-scraper/wallstreetbets-tracker-top-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/wallstreetbets-tracker-top-posts"
+  },
+  {
+   "slug": "claudeai-subreddit-top-posts",
+   "title": "r/ClaudeAI Top Posts and Comments This Week",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get the week's top r/ClaudeAI posts with comments: tips, bugs and feedback about Claude. No login or API key. JSON or CSV.",
+   "input": {
+    "subreddits": [
+     "ClaudeAI"
+    ],
+    "sort": "top",
+    "time": "week",
+    "includeComments": true,
+    "maxCommentsPerPost": 20,
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/claudeai-subreddit-top-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/claudeai-subreddit-top-posts"
+  },
+  {
+   "slug": "reddit-video-posts-only",
+   "title": "Reddit Videos: Posts With Direct Video URLs",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get Reddit video posts with direct video URLs, titles and scores from any subreddit. No login or API key. JSON or CSV. Tested Nov 23, 2026: 5 posts in 8 s.",
+   "input": {
+    "subreddits": [
+     "videos"
+    ],
+    "sort": "top",
+    "time": "week",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-video-posts-only.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-video-posts-only"
+  },
+  {
+   "slug": "chatgpt-subreddit-top-posts",
+   "title": "r/ChatGPT Top Posts and Comments This Week",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get the week's top r/ChatGPT posts with comments: prompts, news and user feedback. No login or API key. JSON or CSV. Tested Nov 23: 5 posts and 100 comments.",
+   "input": {
+    "subreddits": [
+     "ChatGPT"
+    ],
+    "sort": "top",
+    "time": "week",
+    "includeComments": true,
+    "maxCommentsPerPost": 20,
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/chatgpt-subreddit-top-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/chatgpt-subreddit-top-posts"
+  },
+  {
+   "slug": "best-of-reddit-top-posts-all-time",
+   "title": "Best of Reddit: Top Posts of All Time",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get the top Reddit posts of all time with score, comments, subreddit and links. No login or API key. JSON or CSV. Tested Nov 23, 2026: 5 posts in 5 s.",
+   "input": {
+    "subreddits": [
+     "all"
+    ],
+    "sort": "top",
+    "time": "all",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/best-of-reddit-top-posts-all-time.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/best-of-reddit-top-posts-all-time"
+  },
+  {
+   "slug": "reddit-user-search",
+   "title": "Reddit User Search: Find Users by Name",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Search Reddit users by name or keyword and get karma, account age and profile links. No login or API key. JSON, CSV or Excel.",
+   "input": {
+    "searches": [
+     "python"
+    ],
+    "searchType": "users",
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/reddit-user-search.json",
+   "outputFields": [
+    "username",
+    "url",
+    "displayName",
+    "description",
+    "postKarma",
+    "commentKarma",
+    "totalKarma",
+    "isVerified",
+    "isGold"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-user-search"
+  },
+  {
+   "slug": "reddit-ai-answers",
+   "title": "Reddit Answers Scraper: AI Answers With Sources",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Ask Reddit Answers any question and get the AI answer as markdown with the source posts and subreddits. No login. Tested Nov 23, 2026: 2 AI answers in 12 s.",
+   "input": {
+    "answerQueries": [
+     "best budget mechanical keyboard",
+     "is uv better than pip"
+    ]
+   },
+   "inputFile": "reddit-scraper/reddit-ai-answers.json",
+   "outputFields": [
+    "markdown",
+    "follow_ups",
+    "source_posts",
+    "source_subreddits",
+    "queries_remaining",
+    "query"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-ai-answers"
+  },
+  {
+   "slug": "reddit-job-hunting-posts",
+   "title": "Reddit Remote Jobs: Hiring Posts From r/forhire",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get the newest hiring and remote job posts from r/forhire and r/remotejobs with links. No login or API key. JSON or CSV.",
+   "input": {
+    "subreddits": [
+     "forhire",
+     "remotejobs"
+    ],
+    "sort": "new",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-job-hunting-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-job-hunting-posts"
+  },
+  {
+   "slug": "reddit-ama-threads",
+   "title": "Reddit AMA Threads With All Answers",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Export top Reddit AMA threads from r/IAmA with the questions and answers in the comments. No login or API key. JSON or CSV.",
+   "input": {
+    "subreddits": [
+     "IAmA"
+    ],
+    "sort": "top",
+    "time": "month",
+    "includeComments": true,
+    "maxCommentsPerPost": 300,
+    "maxItems": 10
+   },
+   "inputFile": "reddit-scraper/reddit-ama-threads.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-ama-threads"
+  },
+  {
+   "slug": "search-reddit-comments-by-keyword",
+   "title": "Search Reddit Comments: Keyword Threads",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Find Reddit threads about a keyword and get all their comments: text, author, score and depth. No API key. JSON or CSV. Tested Nov 23, 2026 with a real run.",
+   "input": {
+    "searches": [
+     "best password manager"
+    ],
+    "sort": "relevance",
+    "time": "year",
+    "includeComments": true,
+    "maxCommentsPerPost": 50,
+    "maxItems": 20
+   },
+   "inputFile": "reddit-scraper/search-reddit-comments-by-keyword.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/search-reddit-comments-by-keyword"
+  },
+  {
+   "slug": "reddit-api-alternative-no-key",
+   "title": "Reddit API Alternative: No API Key Needed",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get Reddit posts and comments without a Reddit API key or app approval. Top posts of the week with comments. JSON or CSV.",
+   "input": {
+    "subreddits": [
+     "webdev"
+    ],
+    "sort": "top",
+    "time": "week",
+    "includeComments": true,
+    "maxCommentsPerPost": 20,
+    "maxItems": 25
+   },
+   "inputFile": "reddit-scraper/reddit-api-alternative-no-key.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-api-alternative-no-key"
+  },
+  {
+   "slug": "reddit-archive-search-old-posts",
+   "title": "Reddit Archive Search: Old Posts by Keyword",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Search Reddit's archive by keyword across all time, most relevant first, with date, subreddit and score. No login or API key. JSON or CSV.",
+   "input": {
+    "searches": [
+     "first iphone"
+    ],
+    "sort": "relevance",
+    "time": "all",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-archive-search-old-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-archive-search-old-posts"
+  },
+  {
+   "slug": "reddit-rss-feed-alternative",
+   "title": "Reddit RSS Feed Alternative: New Posts as JSON",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get a subreddit's newest posts as clean JSON or CSV instead of an RSS feed, with score and full text. No API key. Tested Nov 23, 2026: 5 posts in 8 s.",
+   "input": {
+    "subreddits": [
+     "selfhosted"
+    ],
+    "sort": "new",
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/reddit-rss-feed-alternative.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-rss-feed-alternative"
+  },
+  {
+   "slug": "reddit-rising-posts",
+   "title": "Reddit Trending: Rising Posts Before They Peak",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Catch trending Reddit posts while they are rising, with score, comments and age. No login or API key. JSON or CSV. Tested Nov 23, 2026: 5 posts in 12 s.",
+   "input": {
+    "subreddits": [
+     "all"
+    ],
+    "sort": "rising",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-rising-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-rising-posts"
+  },
+  {
+   "slug": "reddit-mcp-search",
+   "title": "Reddit MCP: Search Reddit From Claude or ChatGPT",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Use Reddit search from Claude, ChatGPT or Cursor through the Apify MCP server. Posts by keyword, no Reddit API key. Tested Nov 23, 2026: 5 posts in 10 s.",
+   "input": {
+    "searches": [
+     "claude code tips"
+    ],
+    "sort": "relevance",
+    "time": "month",
+    "maxItems": 25
+   },
+   "inputFile": "reddit-scraper/reddit-mcp-search.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-mcp-search"
+  },
+  {
+   "slug": "reddit-hot-posts-multi-subreddit",
+   "title": "Hot Posts From Several Subreddits in One Run",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Collect hot posts from several subreddits in one run, each row tagged with its subreddit. No login or API key. JSON or CSV.",
+   "input": {
+    "subreddits": [
+     "technology",
+     "programming",
+     "datascience"
+    ],
+    "sort": "hot",
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/reddit-hot-posts-multi-subreddit.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-hot-posts-multi-subreddit"
+  },
+  {
+   "slug": "reddit-post-history-of-user",
+   "title": "Reddit Post History of Any User",
+   "actor": "openclawai/reddit-scraper",
+   "description": "See a Reddit user's post history with subreddit, score, comments and date for each post. No login or API key. JSON or CSV.",
+   "input": {
+    "users": [
+     "thisisbillgates"
+    ],
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/reddit-post-history-of-user.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-post-history-of-user"
+  },
+  {
+   "slug": "subreddit-stats-members",
+   "title": "Subreddit Stats: Members, Description and Age",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get subreddit stats for any topic: member count, description and creation date. No login or API key. JSON or CSV. Tested Nov 23, 2026: 5 subreddits in 9 s.",
+   "input": {
+    "searches": [
+     "personal finance"
+    ],
+    "searchType": "communities",
+    "maxItems": 25
+   },
+   "inputFile": "reddit-scraper/subreddit-stats-members.json",
+   "outputFields": [
+    "name",
+    "title",
+    "subscribers",
+    "activeUsers",
+    "description",
+    "isNsfw",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/subreddit-stats-members"
+  },
+  {
+   "slug": "reddit-post-search-keyword-date",
+   "title": "Reddit Post Search by Keyword and Date",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Search Reddit posts by keyword and keep only those after a date, newest first. No login or API key. JSON or CSV. Tested Nov 23, 2026: 5 posts in 11 s.",
+   "input": {
+    "searches": [
+     "notion alternative"
+    ],
+    "sort": "relevance",
+    "time": "year",
+    "postedAfter": "2026-06-01",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-post-search-keyword-date.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-post-search-keyword-date"
+  },
+  {
+   "slug": "reddit-startup-app-ideas",
+   "title": "Startup and App Ideas From Reddit",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Collect startup, SaaS and app ideas people post on Reddit, with votes and comments. No login or API key. JSON or CSV. Tested Nov 23, 2026: 15 posts in 10 s.",
+   "input": {
+    "subreddits": [
+     "SomebodyMakeThis",
+     "AppIdeas",
+     "Startup_Ideas"
+    ],
+    "sort": "top",
+    "time": "month",
+    "maxItems": 40
+   },
+   "inputFile": "reddit-scraper/reddit-startup-app-ideas.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-startup-app-ideas"
+  },
+  {
+   "slug": "reddit-startup-feedback-threads",
+   "title": "Startup Feedback Threads From r/startups and r/SaaS",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Collect new startup and SaaS feedback threads with their comments from r/startups and r/SaaS. No API key. JSON or CSV. Tested Nov 23, 2026 with a real run.",
+   "input": {
+    "subreddits": [
+     "startups",
+     "SaaS"
+    ],
+    "sort": "new",
+    "includeComments": true,
+    "maxCommentsPerPost": 30,
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/reddit-startup-feedback-threads.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-startup-feedback-threads"
+  },
+  {
+   "slug": "reddit-keyword-search-posts",
+   "title": "Reddit Search Tool: Posts by Keyword, No API Key",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Search all of Reddit for posts by keyword, sorted by relevance, top, new or comments, with a time filter. No login. JSON or CSV.",
+   "input": {
+    "searches": [
+     "claude code"
+    ],
+    "sort": "relevance",
+    "time": "month",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-keyword-search-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-keyword-search-posts"
+  },
+  {
+   "slug": "reddit-user-lookup-karma",
+   "title": "Reddit User Lookup: Karma and Account Age",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Look up Reddit accounts by name: total karma, account creation date and profile link. No login or API key. JSON or CSV. Tested Nov 23, 2026: 5 search results.",
+   "input": {
+    "searches": [
+     "spez"
+    ],
+    "searchType": "users",
+    "maxItems": 10
+   },
+   "inputFile": "reddit-scraper/reddit-user-lookup-karma.json",
+   "outputFields": [
+    "username",
+    "url",
+    "displayName",
+    "description",
+    "postKarma",
+    "commentKarma",
+    "totalKarma",
+    "isVerified",
+    "isGold"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-user-lookup-karma"
+  },
+  {
+   "slug": "reddit-user-profile-and-history",
+   "title": "Reddit User History: Profile, Posts and Comments",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get any Reddit user's profile, karma, recent posts and comment history in one run. No login or API key. JSON or CSV. Tested Nov 23, 2026 with a real run.",
+   "input": {
+    "users": [
+     "spez"
+    ],
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/reddit-user-profile-and-history.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-user-profile-and-history"
+  },
+  {
+   "slug": "find-subreddits-by-topic",
+   "title": "Subreddit Finder: Search Subreddits by Topic",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Find subreddits about any topic with member counts, descriptions and creation dates. No login or API key. JSON or CSV. Tested Nov 23: 5 subreddits in 13 s.",
+   "input": {
+    "searches": [
+     "machine learning"
+    ],
+    "searchType": "communities",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/find-subreddits-by-topic.json",
+   "outputFields": [
+    "name",
+    "title",
+    "subscribers",
+    "activeUsers",
+    "description",
+    "isNsfw",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/find-subreddits-by-topic"
+  },
+  {
+   "slug": "reddit-search-inside-subreddit",
+   "title": "Reddit Advanced Search: Keyword Inside a Subreddit",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Search for a keyword inside one subreddit and get matching posts with score, comments and date. No login or API key. JSON or CSV.",
+   "input": {
+    "searches": [
+     "uv package manager"
+    ],
+    "searchSubreddit": "Python",
+    "sort": "relevance",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-search-inside-subreddit.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-search-inside-subreddit"
+  },
+  {
+   "slug": "subreddit-top-posts-this-week",
+   "title": "Subreddit Top Posts This Week: JSON or CSV",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Export the top posts of any subreddit this week with score, comments, author and links. No login or API key. Tested Nov 23, 2026: 5 posts in 8 s.",
+   "input": {
+    "startUrls": [
+     "https://www.reddit.com/r/Python/top/?t=week"
+    ],
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/subreddit-top-posts-this-week.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/subreddit-top-posts-this-week"
+  },
+  {
+   "slug": "reddit-comment-history-of-user",
+   "title": "Reddit Comment History of Any User",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Export a Reddit user's comment history with the subreddit, score and date of each comment. No login or API key. JSON or CSV.",
+   "input": {
+    "users": [
+     "GovSchwarzenegger"
+    ],
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-comment-history-of-user.json",
+   "outputFields": [
+    "body",
+    "author",
+    "score",
+    "subreddit",
+    "postTitle",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-comment-history-of-user"
+  },
+  {
+   "slug": "reddit-product-recommendations",
+   "title": "What Reddit Recommends: Product Reviews",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Find what Reddit recommends for any product category: top threads with comments. No login or API key. JSON or CSV. Tested Nov 23: 5 posts and 106 comments.",
+   "input": {
+    "searches": [
+     "best noise cancelling headphones"
+    ],
+    "sort": "relevance",
+    "time": "year",
+    "includeComments": true,
+    "maxCommentsPerPost": 30,
+    "maxItems": 20
+   },
+   "inputFile": "reddit-scraper/reddit-product-recommendations.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-product-recommendations"
+  },
+  {
+   "slug": "reddit-dataset-json-csv",
+   "title": "Download a Reddit Dataset as JSON or CSV",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Build a Reddit dataset from any subreddit: posts with score, comments, author and date. No login or API key. Tested Nov 23, 2026: 5 posts in 12 s.",
+   "input": {
+    "subreddits": [
+     "datasets"
+    ],
+    "sort": "top",
+    "time": "year",
+    "maxItems": 200
+   },
+   "inputFile": "reddit-scraper/reddit-dataset-json-csv.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-dataset-json-csv"
+  },
+  {
+   "slug": "reddit-post-with-comments",
+   "title": "Reddit Comments Scraper: Full Thread to JSON or CSV",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Export Reddit posts with their full comment trees: author, score, depth and parent of every comment. No API key. JSON or CSV.",
+   "input": {
+    "startUrls": [
+     "https://www.reddit.com/r/Python/top/?t=month"
+    ],
+    "includeComments": true,
+    "maxCommentsPerPost": 200,
+    "maxItems": 5
+   },
+   "inputFile": "reddit-scraper/reddit-post-with-comments.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-post-with-comments"
+  },
+  {
+   "slug": "reddit-controversial-posts",
+   "title": "Reddit Controversial Posts of the Month",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get the most controversial posts of a subreddit this month, with score, upvote ratio and comments. No API key. JSON or CSV.",
+   "input": {
+    "subreddits": [
+     "technology"
+    ],
+    "sort": "controversial",
+    "time": "month",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-controversial-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-controversial-posts"
+  },
+  {
+   "slug": "reddit-lead-generation-posts",
+   "title": "Reddit Lead Generation: Posts Asking for Tools",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Find Reddit posts where people ask for a tool or service like yours, from the last month. No login or API key. JSON or CSV.",
+   "input": {
+    "searches": [
+     "looking for a CRM",
+     "recommend a CRM"
+    ],
+    "sort": "relevance",
+    "time": "month",
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/reddit-lead-generation-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-lead-generation-posts"
+  },
+  {
+   "slug": "reddit-brand-mentions-monitor",
+   "title": "Reddit Keyword Alerts: Track Brand Mentions",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Track Reddit posts from the last week that mention your brand, product or competitor. Schedule it for keyword alerts. No API key. JSON or CSV.",
+   "input": {
+    "searches": [
+     "Notion app"
+    ],
+    "sort": "relevance",
+    "time": "week",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/reddit-brand-mentions-monitor.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-brand-mentions-monitor"
+  },
+  {
+   "slug": "reddit-question-threads-askreddit",
+   "title": "AskReddit Questions and Top Answers",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get today's top AskReddit questions with their best answers. No login or API key. JSON or CSV. Tested Nov 23, 2026: 5 posts and 125 comments in 11 s.",
+   "input": {
+    "subreddits": [
+     "AskReddit"
+    ],
+    "sort": "top",
+    "time": "day",
+    "includeComments": true,
+    "maxCommentsPerPost": 25,
+    "maxItems": 25
+   },
+   "inputFile": "reddit-scraper/reddit-question-threads-askreddit.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-question-threads-askreddit"
+  },
+  {
+   "slug": "reddit-posts-by-date-range",
+   "title": "Reddit Search by Date: Posts in a Date Range",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get Reddit posts from a subreddit between two dates with score, comments and author. No API key. JSON or CSV. Tested Nov 23, 2026: 5 posts in 10 s.",
+   "input": {
+    "subreddits": [
+     "MachineLearning"
+    ],
+    "sort": "new",
+    "postedAfter": "2026-11-01",
+    "postedBefore": "2026-11-20",
+    "maxItems": 300
+   },
+   "inputFile": "reddit-scraper/reddit-posts-by-date-range.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-posts-by-date-range"
+  },
+  {
+   "slug": "reddit-crypto-sentiment-posts",
+   "title": "Reddit Crypto Sentiment: Top Posts and Comments",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get today's top r/CryptoCurrency posts with comments for sentiment analysis. No login or API key. JSON or CSV. Tested Nov 23: 5 posts and 63 comments in 8 s.",
+   "input": {
+    "subreddits": [
+     "CryptoCurrency"
+    ],
+    "sort": "top",
+    "time": "day",
+    "includeComments": true,
+    "maxCommentsPerPost": 20,
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/reddit-crypto-sentiment-posts.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-crypto-sentiment-posts"
+  },
+  {
+   "slug": "reddit-competitor-research-search",
+   "title": "Reddit Market Research: Competitor Threads",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Find Reddit threads comparing products in your market, with comments, for competitor and market research. No API key. Tested Nov 23: 5 posts and 97 comments.",
+   "input": {
+    "searches": [
+     "best CRM for small business"
+    ],
+    "sort": "relevance",
+    "time": "year",
+    "includeComments": true,
+    "maxCommentsPerPost": 30,
+    "maxItems": 50
+   },
+   "inputFile": "reddit-scraper/reddit-competitor-research-search.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/reddit-competitor-research-search"
+  },
+  {
+   "slug": "subreddit-new-posts-monitor",
+   "title": "Monitor New Posts in a Subreddit",
+   "actor": "openclawai/reddit-scraper",
+   "description": "Get the newest posts in any subreddit on every run. Schedule it to monitor a community. No login or API key. JSON or CSV.",
+   "input": {
+    "subreddits": [
+     "technology"
+    ],
+    "sort": "new",
+    "maxItems": 100
+   },
+   "inputFile": "reddit-scraper/subreddit-new-posts-monitor.json",
+   "outputFields": [
+    "title",
+    "subreddit",
+    "author",
+    "score",
+    "upvoteRatio",
+    "numComments",
+    "flair",
+    "createdAt",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/reddit-scraper/subreddit-new-posts-monitor"
+  },
+  {
+   "slug": "tiktok-video-downloader",
+   "title": "TikTok Video Downloader: MP4 Link From Any Video",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Download TikTok videos: paste a link and get the watermark-free video file link with title, author and stats. No login. Tested Nov 23, 2026: 1 video in 3 s.",
+   "input": {
+    "mode": "video_detail",
+    "platform": "tiktok",
+    "urls": [
+     "https://www.tiktok.com/@khaby.lame/video/7649410784241405214"
+    ],
+    "downloadVideos": true
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-video-downloader.json",
+   "outputFields": [
+    "platform",
+    "title",
+    "author_name",
+    "play_count",
+    "like_count",
+    "comment_count",
+    "created_at",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-video-downloader"
+  },
+  {
+   "slug": "booktok-tiktok-hashtag-videos",
+   "title": "BookTok Videos: TikTok #booktok Data Export",
+   "actor": "openclawai/tiktok-scraper",
+   "description": "Export #booktok TikTok videos with views, likes, comments, authors and captions. No login or API key. JSON or CSV. Tested Nov 23, 2026: 5 videos in 7 s.",
+   "input": {
+    "mode": "hashtag_videos",
+    "urls": [
+     "#booktok"
+    ],
+    "maxItems": 200
+   },
+   "inputFile": "tiktok-scraper/booktok-tiktok-hashtag-videos.json",
+   "outputFields": [
+    "platform",
+    "title",
+    "author_name",
+    "play_count",
+    "like_count",
+    "comment_count",
+    "created_at",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/booktok-tiktok-hashtag-videos"
+  },
+  {
+   "slug": "douyin-downloader-hd-videos",
+   "title": "Douyin Downloader: Download Douyin Videos",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Download Douyin videos without watermark: paste a Douyin link and get the video file link, title, author and stats. No login. JSON or CSV.",
+   "input": {
+    "mode": "video_detail",
+    "platform": "douyin",
+    "urls": [
+     "https://www.douyin.com/video/7448118827402972455"
+    ],
+    "downloadVideos": true
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/douyin-downloader-hd-videos.json",
+   "outputFields": [
+    "platform",
+    "title",
+    "author_name",
+    "play_count",
+    "like_count",
+    "comment_count",
+    "created_at",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/douyin-downloader-hd-videos"
+  },
+  {
+   "slug": "tiktok-influencer-profile-stats",
+   "title": "TikTok Follower Count and Profile Stats",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Check any TikTok account's follower count, following, likes, video count and bio. No login or API key. JSON or CSV. Tested Nov 23, 2026: 1 profile in 4 s.",
+   "input": {
+    "mode": "user_profile",
+    "platform": "tiktok",
+    "urls": [
+     "https://www.tiktok.com/@charlidamelio"
+    ]
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-influencer-profile-stats.json",
+   "outputFields": [
+    "platform",
+    "item_id",
+    "url",
+    "author_id",
+    "author_name",
+    "author_username",
+    "share_count",
+    "follower_count",
+    "following_count"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-influencer-profile-stats"
+  },
+  {
+   "slug": "kuaishou-video-downloader",
+   "title": "Kuaishou Downloader: Download a Creator's Videos",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Download Kuaishou videos without watermark: a creator's latest videos with file links, titles and stats. No login. JSON or CSV.",
+   "input": {
+    "mode": "user_posts",
+    "platform": "kuaishou",
+    "urls": [
+     "https://v.kuaishou.com/KcdKDwFp"
+    ],
+    "maxItems": 10,
+    "downloadVideos": true
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/kuaishou-video-downloader.json",
+   "outputFields": [
+    "platform",
+    "title",
+    "author_name",
+    "play_count",
+    "like_count",
+    "comment_count",
+    "created_at",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/kuaishou-video-downloader"
+  },
+  {
+   "slug": "tiktok-creator-posts",
+   "title": "TikTok Scraper: Creator Videos With Views and Likes",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Scrape a TikTok creator's latest videos with views, likes, comments, shares, hashtags and dates. No login or API key. JSON or CSV.",
+   "input": {
+    "mode": "user_posts",
+    "platform": "tiktok",
+    "urls": [
+     "https://www.tiktok.com/@khaby.lame"
+    ],
+    "maxItems": 20
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-creator-posts.json",
+   "outputFields": [
+    "platform",
+    "title",
+    "author_name",
+    "play_count",
+    "like_count",
+    "comment_count",
+    "created_at",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-creator-posts"
+  },
+  {
+   "slug": "nba-tiktok-followers-list",
+   "title": "TikTok Followers List Export",
+   "actor": "openclawai/tiktok-scraper",
+   "description": "Export the followers list of a TikTok account: usernames, names, follower counts and bios. No login or API key. JSON or CSV.",
+   "input": {
+    "mode": "followers",
+    "urls": [
+     "@nba"
+    ],
+    "maxItems": 1000
+   },
+   "inputFile": "tiktok-scraper/nba-tiktok-followers-list.json",
+   "outputFields": [
+    "platform",
+    "author_name",
+    "created_at",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/nba-tiktok-followers-list"
+  },
+  {
+   "slug": "tiktok-video-comments",
+   "title": "TikTok Comments Export: Comments to CSV or JSON",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Export TikTok comments from any video: text, author, likes and date for each comment. No login or API key. CSV or JSON. Tested Nov 23: 5 comments in 2 s.",
+   "input": {
+    "mode": "video_comments",
+    "platform": "tiktok",
+    "urls": [
+     "https://www.tiktok.com/@khaby.lame/video/7644214443265625375"
+    ],
+    "maxItems": 50
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-video-comments.json",
+   "outputFields": [
+    "platform",
+    "author_name",
+    "like_count",
+    "comment_count",
+    "created_at",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-video-comments"
+  },
+  {
+   "slug": "bilibili-subtitles-download",
+   "title": "Bilibili Subtitles Download: Video Captions",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Download Bilibili video subtitles and captions: the full caption text plus the timed subtitle file. Paste a BV link. No login.",
+   "input": {
+    "mode": "subtitles",
+    "platform": "bilibili",
+    "urls": [
+     "BV1rpWjevEip"
+    ]
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/bilibili-subtitles-download.json",
+   "outputFields": [
+    "platform",
+    "item_id",
+    "url",
+    "title",
+    "description"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/bilibili-subtitles-download"
+  },
+  {
+   "slug": "douyin-trending-videos",
+   "title": "Douyin Trending Videos Today",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Get today's trending Douyin videos with plays, likes, comments, author and links. No login or API key. JSON or CSV. Tested Nov 23, 2026: 5 videos in 2 s.",
+   "input": {
+    "mode": "trending",
+    "platform": "douyin",
+    "maxItems": 20
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/douyin-trending-videos.json",
+   "outputFields": [
+    "platform",
+    "item_id",
+    "title",
+    "description",
+    "play_count"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/douyin-trending-videos"
+  },
+  {
+   "slug": "tiktok-fake-views-checker",
+   "title": "TikTok Fake Views Checker",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Check whether a TikTok video's views look fake: an authenticity report from its view and engagement patterns. No login. Tested Nov 23: 1 view report in 13 s.",
+   "input": {
+    "mode": "fake_view_check",
+    "platform": "tiktok",
+    "urls": [
+     "7460937381265411370"
+    ]
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-fake-views-checker.json",
+   "outputFields": [
+    "video",
+    "total_views",
+    "fake_view_percentage",
+    "estimated_fake_views",
+    "is_suspicious",
+    "fake_score",
+    "confidence",
+    "creator_trust_score",
+    "creator_followers"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-fake-views-checker"
+  },
+  {
+   "slug": "tiktok-and-douyin-creator-videos",
+   "title": "TikTok and Douyin Creator Videos in One Run",
+   "actor": "openclawai/tiktok-douyin-bilibili-scraper",
+   "description": "Get a creator's videos from TikTok and Douyin in one run, with one shared set of columns. No login or API key. JSON or CSV.",
+   "input": {
+    "mode": "user_posts",
+    "urls": [
+     "https://www.tiktok.com/@tiktok",
+     "https://www.douyin.com/user/MS4wLjABAAAANXSltcLCzDGmdNFI2Q_QixVTr67NiYzjKOIP5s03CAE"
+    ],
+    "maxItems": 20
+   },
+   "inputFile": "tiktok-douyin-bilibili-scraper/tiktok-and-douyin-creator-videos.json",
+   "outputFields": [
+    "platform",
+    "title",
+    "author_name",
+    "play_count",
+    "like_count",
+    "comment_count",
+    "created_at",
+    "url"
+   ],
+   "testedAt": "2026-11-23",
+   "page": "https://datapika.com/tasks/tiktok-douyin-bilibili-scraper/tiktok-and-douyin-creator-videos"
+  }
+ ]
+}

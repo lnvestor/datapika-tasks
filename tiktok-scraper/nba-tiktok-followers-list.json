@@ -1,0 +1,7 @@
+{
+  "mode": "followers",
+  "urls": [
+    "@nba"
+  ],
+  "maxItems": 1000
+}

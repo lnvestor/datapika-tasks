@@ -1,0 +1,12 @@
+{
+  "keywords": [
+    "cooking",
+    "recipes"
+  ],
+  "platforms": [
+    "tiktok"
+  ],
+  "minEngagementRate": "5",
+  "onlyWithEmail": true,
+  "maxCreators": 25
+}

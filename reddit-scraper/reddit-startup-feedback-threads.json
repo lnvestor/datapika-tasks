@@ -1,0 +1,10 @@
+{
+  "subreddits": [
+    "startups",
+    "SaaS"
+  ],
+  "sort": "new",
+  "includeComments": true,
+  "maxCommentsPerPost": 30,
+  "maxItems": 50
+}

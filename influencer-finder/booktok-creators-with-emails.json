@@ -1,0 +1,11 @@
+{
+  "keywords": [
+    "booktok",
+    "book recommendations"
+  ],
+  "platforms": [
+    "tiktok"
+  ],
+  "onlyWithEmail": true,
+  "maxCreators": 25
+}

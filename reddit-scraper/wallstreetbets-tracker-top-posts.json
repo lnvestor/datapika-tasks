@@ -1,0 +1,10 @@
+{
+  "subreddits": [
+    "wallstreetbets"
+  ],
+  "sort": "top",
+  "time": "day",
+  "includeComments": true,
+  "maxCommentsPerPost": 30,
+  "maxItems": 25
+}

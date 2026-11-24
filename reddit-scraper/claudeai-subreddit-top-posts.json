@@ -1,0 +1,10 @@
+{
+  "subreddits": [
+    "ClaudeAI"
+  ],
+  "sort": "top",
+  "time": "week",
+  "includeComments": true,
+  "maxCommentsPerPost": 20,
+  "maxItems": 50
+}
